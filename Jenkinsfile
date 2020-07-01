@@ -19,7 +19,8 @@ try {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         ansiColor('xterm') {
-          sh 'terraform init'
+          //sh 'terraform init'
+          sh 'terraform init -input=false'
         }
       }
     }
@@ -36,7 +37,7 @@ try {
       ]]) {
         ansiColor('xterm') {
           //sh 'terraform plan'
-          sh 'terraform plan -out kong.plan'
+          sh 'terraform plan'
         }
       }
     }
@@ -55,7 +56,8 @@ try {
         ]]) {
           ansiColor('xterm') {
             //sh 'terraform apply -auto-approve'
-            sh 'terraform apply kong.plan'
+            //sh 'terraform apply kong.plan'
+            sh 'terraform apply -input=false -auto-approve'
           }
         }
       }
