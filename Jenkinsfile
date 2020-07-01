@@ -57,7 +57,7 @@ try {
           ansiColor('xterm') {
             //sh 'terraform apply -auto-approve'
             //sh 'terraform apply kong.plan'
-            sh 'terraform apply -auto-approve'
+            sh 'terraform apply'
           }
         }
       }
