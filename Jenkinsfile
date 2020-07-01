@@ -37,7 +37,7 @@ try {
       ]]) {
         ansiColor('xterm') {
           //sh 'terraform plan'
-          sh 'terraform plan'
+          sh 'terraform plan -input=false'
         }
       }
     }
