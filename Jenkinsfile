@@ -20,6 +20,7 @@ try {
       ]]) {
         ansiColor('xterm') {
           sh 'terraform init'
+         
         }
       }
     }
@@ -54,6 +55,7 @@ try {
         ]]) {
           ansiColor('xterm') {
             sh 'terraform apply'
+            sh 'yes'
           }
         }
       }
