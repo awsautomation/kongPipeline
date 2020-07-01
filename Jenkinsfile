@@ -55,7 +55,7 @@ try {
         ]]) {
           ansiColor('xterm') {
             sh 'terraform apply'
-            echo 'yes'
+            sh echo 'yes'
           }
           }
         }
