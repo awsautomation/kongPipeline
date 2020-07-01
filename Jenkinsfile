@@ -20,7 +20,7 @@ try {
       ]]) {
         ansiColor('xterm') {
           //sh 'terraform init'
-          sh 'terraform init -input=false'
+          sh 'terraform init -input=true'
         }
       }
     }
@@ -37,7 +37,7 @@ try {
       ]]) {
         ansiColor('xterm') {
           //sh 'terraform plan'
-          sh 'terraform plan -input=false'
+          sh 'terraform plan -input=true'
         }
       }
     }
@@ -57,7 +57,7 @@ try {
           ansiColor('xterm') {
             //sh 'terraform apply -auto-approve'
             //sh 'terraform apply kong.plan'
-            sh 'terraform apply -input=false -auto-approve'
+            sh 'terraform apply -input=true -auto-approve'
           }
         }
       }
