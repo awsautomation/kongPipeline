@@ -55,7 +55,6 @@ try {
         ]]) {
           ansiColor('xterm') {
             sh 'terraform apply'
-            if (Join == 'yes') or 'Yes':
           }
         }
       }
