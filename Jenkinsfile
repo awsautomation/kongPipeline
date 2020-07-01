@@ -56,7 +56,6 @@ try {
           ansiColor('xterm') {
             sh 'terraform apply'
           }
-          ansiColor('xterm') {
             sh 'yes'
           }
         }
